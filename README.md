@@ -8,7 +8,7 @@ The main ungrab line in locker.sh is
 ```
 xdotool key --delay 250 Shift+Control+Alt Control+Alt Escape
 ```
-xdotool sends sends the above keys to ungrab the grab, then you need to give the correct command to lock your computer. The script works with gnome-screensaver-command or mate-screensaver-command, which you need to change for your platform.
+xdotool sends sends the above keys, one combination after the other, to ungrab the grab, then you need to give the correct command to lock your computer. The script works with gnome-screensaver-command or mate-screensaver-command, which you need to change for your platform.
 
 xautolock is set to 1 minute (install_locker.sh).
 
