@@ -17,9 +17,9 @@ The only backdraw I have found is that you need to set the original locker to mo
 To install this locker, run install_locker.sh as the user you want to have this locker with. Next time you log in it is run.
 ```
 chmod +x install_locker.sh
-chmod +x locker.sh
 ./install_locker.sh
-sudo cp -a locker.sh /opt/
+sudo cp locker.sh /opt/
+sudo chmod +x /opt/locker.sh
 ```
 
 To run directly without log out and in run:
