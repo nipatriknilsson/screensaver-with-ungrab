@@ -19,7 +19,7 @@ if [ "$running" != "0" ]; then
     fi
 
     eval $(xdotool getmouselocation --shell)
-    if [ "$X" != "$mouserestpos_x" ] || [ "$Y" != "$mouserestpos_y" ] ; then
+    if [ "$X" -gt "$((mouserestpos_x*2))" ] || [ "$Y" -gt "$((mouserestpos_y*2))" ] ; then
         xdotool mousemove $mouserestpos_x $mouserestpos_y
     fi
 else
