@@ -14,7 +14,7 @@ cd $dir
 cat > temp.txt << EOF
 [Desktop Entry]
 Type=Application
-Exec=xautolock -time 1 -secure -locker "/opt/locker.sh"
+Exec=xautolock -time 1 -secure -nocloseout -nocloseerr -locker "/opt/locker.sh"
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
