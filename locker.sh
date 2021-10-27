@@ -5,7 +5,7 @@ set -x
 mouserestpos_x=30
 mouserestpos_y=15
 
-command=$(ps -A -o command | grep -E '(mate|gnome)-screensaver' | head -1)
+command=$(ps -A -o command | grep -E '(mate|gnome)-screensaver' | head -1 | awk '{print $1}')
 
 if [ "$command" != "" ]; then
     if [ "$(${command}-command -q | grep 'inactive')" != "" ]; then
